@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-require File.expand_path("soce_group_extractor.rb",File.dirname(__FILE__))
+require File.expand_path("../soce_group_extractor.rb",File.dirname(__FILE__))
 SoceGroupExtractor.logger.info "Running in env : #{CURRENT_ENV}"
 SoceGroupExtractor.new.process
