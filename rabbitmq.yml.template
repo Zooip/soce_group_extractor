@@ -1,0 +1,18 @@
+no_env: &default
+  sender:
+  host:
+  port:
+  user:
+  password:
+
+  exchange_name: "agoram_event_exchange"
+
+  vhost:
+
+recette:
+  <<: *default
+  vhost:
+
+production:
+  <<: *default
+  vhost:

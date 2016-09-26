@@ -1,12 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.8)
+    amq-protocol (2.0.1)
+    bunny (2.5.1)
+      amq-protocol (>= 2.0.1)
+    gorg_message_sender (1.4.0)
+      bunny (~> 2.2, >= 2.2.2)
+      json-schema (~> 2.6)
+    json-schema (2.6.2)
+      addressable (~> 2.3.8)
     mysql2 (0.3.21)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  gorg_message_sender
   mysql2 (~> 0.3.20)
 
 BUNDLED WITH
