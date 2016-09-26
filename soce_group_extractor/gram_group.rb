@@ -26,9 +26,7 @@ class SoceGroupExtractor::GramGroup
       name: @name,
       short_name: @short_name,
       description: @description,
-      members: @members.map{|uuid|
-        {uuid: uuid}
-      }
+      members: @members
     }
   end
 
